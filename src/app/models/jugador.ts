@@ -1,4 +1,4 @@
-export interface TarjetaInicio {
+export interface Jugador {
     id: number;
     titulo : string;
     descripcion: string;

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <h1>Registrate</h1>
+    <i class="material-icons" style="font-size: 280px;">Person</i>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Fill form field</mat-label>
+        <input matInput placeholder="Placeholder">
+      </mat-form-field>
+    </p>
+  
+      <mat-form-field>
+        <mat-label>Ingrese un nombre de usuario</mat-label>
+        <input matInput [type]="hide ? 'Ingrese una contraseña' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" >Register</button>
+  </div>
+</div>
